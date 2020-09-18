@@ -1,7 +1,7 @@
 .jumbotron img {
 	width: 200px;
-	border: 5px solid #333;
-	box-shadow: 1px 1px 10px rgba(0,0,0,0,5)
+	border: 5px solid #eaeaea;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
 .about hr {
@@ -19,14 +19,35 @@ body {
 	background-size: cover;
 	background-position: 0 -100px;
 	color: #eaeaea;
+	overflow: hidden;
 }
 
 .jumbotron h1, .jumbotron p {
-	text-shadow: 1px 1px 10px rgba(0,0,0,0,5)
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
-.col-sm-6 img {
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 3s;
+}
+
+.pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.pKanan img {
 	width: 250px;
 }
+
+.pKiri img {
+	width: 500px;
+}
+
 
 
