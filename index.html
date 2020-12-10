@@ -39,6 +39,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#tugas1" class="page-scroll">Tugas 1</a></li>
         <li><a href="#tugas2" class="page-scroll">Tugas 2</a></li>
+        <li><a href="#tugas3" class="page-scroll">Tugas 3</a></li>
+        <li><a href="#tugas4" class="page-scroll">Tugas 4</a></li>
+        <li><a href="#tugas5" class="page-scroll">Tugas 5</a></li>
         <!-- <li><a href="">About3</a></li> -->
       </ul>
     </div>
@@ -160,6 +163,149 @@ string tersebut dikenali atau tidak.</p>
     </section>
     <!-- akhir tugas2 -->
 
+    <!-- tugas3 -->
+    <section class="about" id="tugas3">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Finite Automata</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> &nbsp; &nbsp; &nbsp; Automata merupakan suatu sistem yang terdiri atas sejumlah berhingga state, di mana state menyatakan informasi mengenai input. Automata juga dianggap sebagai mesin otomatis (bukan mesin fisik) yang merupakan suatu model matematika dari suatu sistem yang menerima input dan menghasilkan output, serta terdiri dari sejumlah berhingga state <br> <br>  
+&nbsp; &nbsp; &nbsp;Finite State Automata (FSA) atau finite automata adalah mesin automata dari bahasa regular. finite automata merupakan model matematika yang dapat menerima input dan mengeluarkan output yang memiliki state yang berhingga banyaknya dan dapat berpindah dari satu state ke state lainnya berdasarkan input dan fungsi transisi.
+ <br> 
+&nbsp; &nbsp; &nbsp;Secara formal finite state automata dinyatakan oleh 5 tupel atau M=(Q, Σ, δ, S, F), di mana :
+Q = himpunan hingga state <br>  
+Σ = himpunan hingga simbol input / alfabet <br> 
+δ = fungsi transisi, menggambarkan simbolinput. fungsi transisi biasanya diberikan dalam bentuk tabel. <br> 
+S = state awal / kedudukan awal (initial state) <br>  
+F = himpunan state akhir. <br> <br> 
+Ada 2 jenis FSA yaitu DFA dan NFA, yang dimana : <br> 
+Deterministic finite automata (DFA). pada DFA transisi state FSA akibat pembacaan sebuah simbol bersifat tertentu.
+δ : Q X Σ --> Q <br>
+Sedangkan NFA adalah singkatan dari non-deterministic finite automata. pada NFA transisi state FSA akibat pembacaan sebuah simbol bersifat tak tentu.
+δ : Q X Σ --> 2Q <br> <br>  
+&nbsp; &nbsp; &nbsp;Mudah untuk membuat NFA daripada DFA untuk bahasa reguler tertentu. Automata terbatas disebut NFA ketika terdapat banyak jalur untuk input spesifik dari status saat ini ke status berikutnya. Setiap NFA bukanlah DFA, tetapi setiap NFA dapat diterjemahkan ke dalam DFA. NFA didefinisikan dengan cara yang sama seperti DFA tetapi dengan dua pengecualian berikut, NFA berisi beberapa status berikutnya, dan berisi transisi ε. Contoh penerapan NFA seperti pada Aplikasi Simulasi Mesin Kopi Vending, ATM, aplikasi pengisian Kartu Rencana Studi (KRS). <br>
+<img src="img/tugas3(1).jpg"><br>
+        </div>
+        <div class="col-sm-6">
+          <p class="pKanan"><strong> Pemanfaatan NFA dalam pengisian krs :  </strong><br> <br>
+&nbsp; &nbsp; &nbsp; Pada paper ini membahas tentang bagaimana metode Finite State Automata jenis NFA dapat diimplementasikan dalam mengisi kartu rencana studi (KRS). <br> <br>
+
+&nbsp; &nbsp; &nbsp;Tuple M pada FSA jenis NFA diantaranya (Q, Ʃ, δ, S, F) yang mengartikan untuk Q=himpunan state, Ʃ=himpunan input, δ=fungsi transis, S=state awal, F=state akhir sebagai contoh sederhana dengan NFA[4]. Dari diagram dibawah, kita bisa melihat bahwa tuple-nya sebagai berikut: <br>
+Q = {q1,q2,q3,q4} <br>
+Ʃ = {0,1}<br>
+δ = Fungsi transisi <br>
+δ(q1,0)=q2, δ(q1,1)=q2, δ(q2,0)=q2, <br>
+δ (q2,1)=(q3,q4), δ(q3,0)=q3, δ(q3,1)=q4, <br>
+δ (q4,0)=q4, δ(q4,1)=q4 <br>
+S = {q1}<br>
+F = {q4} <br> <br>
+
+dalam pengisian tersebut maka tabel transisinya yaitu: <br> <br>
+<img src="img/tugas3(2).png"><br> <br>
+&nbsp; &nbsp; &nbsp;Kasus pada Tabel 1 dapat diterapkan kedalam pengisian KRS, sebagai contoh bila q1 itu adalah mata kuliah Algoritma Pemograman dan q2 adalah Bahasa dan Automata, dan himpunan input 0 sebagai di tidak ambil dan himpunan input 1 sebagai ambil, maka untuk bisa mengambil mata kuliah Bahasa dan Autama harus mengambil mata kuliah Algoritma Pemograman (q1) terlebih dahulu.
+
+sistem dirangcang dengan menggunakan flowchart, yang menjelaskan tentang gambaran umum aplikasi pengisian Kartu Rencana Studi. pada flowchart aplikasi dijelaskan sebagai berikut:
+mahasiswa menentukan mata kuliah yang akan diambil semester berikutnya.
+sistem akan memfalidasi mata kuliah yang diambil.
+sistem akan menampilkan laporan diterimanya atau ditolaknya pengisian KRS tersebut.
+
+    </p> 
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- akhir tugas3 -->
+
+     <!-- tugas4 -->
+    <section class="about" id="tugas4">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Regular Expression (RegEx)</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> &nbsp; &nbsp; &nbsp; Konsep tentang regex pertamakali muncul di tahun 1951, ketika seorang ilmuan matematikan bernama Stephen Cole Kleene memformulasikan definisi tentang bahasa formal.1 emudian konsep ini diadopsi di beberapa program dan menjadi umum digunakan pada program pemeroses teks seperti sed, awk, grep, dll. <br> <br>
+
+&nbsp; &nbsp; &nbsp;Regex adalah singkatan dari Regular Expresion. Regex merupakan sebuah teks (string) yang mendefinisikan sebuah pola pencarian sehingga dapat membantu kita untuk melakukan matching (pencocokan), locate (pencarian), dan manipulasi teks. <br> <br>
+
+&nbsp; &nbsp; &nbsp;Bahasa disebut reguler jika terdapat FSA yang dapat menerimanya. Salah satu cara mendeskripsikan bahasa reguler adalah melalui notasi bahasa regular ekspresi. Notasi ini melibatkan kombinasi string symbol dari beberapa alfabet Σ, tanda kurung, dan operator +, ·, *.
+<br> <br>
+<strong>Definisi Formal dari Ekspresi Reguler</strong>
+<br>
+&nbsp; &nbsp; &nbsp;Ekspresi regular dibangun dari konstituen primitif dengan berulang kali menerapkan aturan rekursif tertentu. Ini mirip dengan cara membangun familiar arithmetic expressions.
+<br> <br>
+&nbsp; &nbsp; &nbsp;Misalkan Σ adalah alfabet tertentu. Kemudian: <br>
+1. ∅, λ, dan a ∈ Σ adalah ekspresi reguler. Ini disebut primitif ekspresi reguler. <br>
+2. Jika r1 dan r2 adalah ekspresi reguler, jadi r1 + r2, r1 · r2, r ∗1, dan (r1). <br>
+3. String adalah ekspresi reguler jika dan hanya jika dapat diturunkan dari ekspresi reguler primitif oleh sejumlah aplikasi yang terbatas dari aturan didalamnya. <br> <br>
+
+        </div>
+        <div class="col-sm-6">
+          <p class="pKanan">&nbsp; &nbsp; &nbsp;Jadi,ekspresi reguler berfungsi sebagai bahasa masukan untuk banyak sistem yang memproses string. Contohnya termasuk: <br> <br>
+1. Cari perintah seperti UNIX grep atau perintah yang setara untuk mencari string yang dilihat seseorang di browser Web atau sistem format teks, seperti pada fitur spell-checker yang tersedia pada Microsoft Word dimana dapat membantu memberikan penanda untuk kata-kata yang salah ketik, atau tidak sesuai format. Sistem ini menggunakan notasi seperti ekspresi reguler untuk mendeskripsikan pola yang ingin ditemukan pengguna didalam file. Sistem pencarian yang berbeda dikonversi ekspresi reguler menjadi DFA atau NFA, dan simulasikan robot akan mencari. <br> <br>
+2. Generator penganalisis leksikal, seperti Lex atau Flex. Ingatlah bahwa leksikal analyzer adalah komponen kompilator yang merusak program sumber menjadi unit logis (disebut token) dari satu atau lebih karakter yang memiliki file significant yang sama. Contoh token termasuk kata kunci (mis., Sementara), identifikasi (misalnya, huruf apa pun yang diikuti dengan nol atau lebih huruf dan / atau angka), dan tanda, seperti + atau <=. Generator penganalisis leksikal menerima deskripsi bentuk token, yang pada dasarnya adalah ekspresi reguler, dan menghasilkan DFA yang mengenali token mana yang muncul berikutnya.
+    </p> 
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- akhir tugas4 -->
+
+     <!-- tugas5 -->
+    <section class="about" id="tugas5">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Context Free Grammar</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> &nbsp; &nbsp; &nbsp; Context Free Grammar adalah tata bahasa formal di mana setiap aturan produksi adalah dalam bentuk A → B di mana A adalah pemproduksi, dan B adalah hasil produksi. Batasannya hanyalah ruas kiri adalah sebuah simbol variabel. Dan pada ruas kanan bisa berupa terminal, symbol, variable ataupun ɛ, Contoh aturan produksi yang termasuk CFG adalah seperti berikut ini: <br> <br>
+
+• X  → bY | Za<br>
+• Y  → aY | b<br>
+• Z  → bZ | Ɛ<br><br>
+
+
+&nbsp; &nbsp; &nbsp;CFG adalah tata bahasa yang mempunyai tujuan sama seperti halnya tata bahasa regular yaitu merupakan suatu cara untuk menunjukkan bagaimana menghasilkan suatu untai-untai dalam sebuah bahasa. <br> <br>
+
+
+&nbsp; &nbsp; &nbsp;CFG perlu disederhankan dengan tujuan untuk melakukan pembatasan sehingga tidak menghasilkan pohon penurunan yang memiliki kerumitan yang tak perlu atau aturan produksi tak berarti. Berikut merupakan langkah-langkah dalam melakukan penyederhanaan CFG: <br>
+
+1. Eliminasi ɛ-production <br>
+
+2. Eliminasi unit production <br>
+
+3. Eliminasi useless symbol <br> <br>
+
+        </div>
+        <div class="col-sm-6">
+          <p class="pKanan"> <strong>Pemanfaaatan Context Free Grammar : </strong> <br> <br>
+            &nbsp; &nbsp; &nbsp;CFG digunakan untuk melakukan penelusuran sebuah kalimat (sentensial) . Penelusuran sentensial dilakukan dengan melakukan analisis sintaks, yaitu melakukan penelusuran sentensial sampai pada simbol awal grammar.  Analisis sintaks dapat dilakukan melalui Derivasi dan Parsing. <br> <br>
+
+
+&nbsp; &nbsp; &nbsp;Contoh kasus: Analisis sintaks. Problem: Lakukanlah analisis sintaks untuk kalimat x23b menggunakan kedua cara penelusuran sentensial derivasi dan parsing jika diketahui G = {I → H | IH | IA, H → a | b | c | ... | z, A → 0 | 1 | 2 | ... | 9} <br> <br>
+
+&nbsp; &nbsp; &nbsp;Selain itu bisa juga digunakan untuk memeriksa ketepatan tata bahasa kalimat. Aturan dapat Diterapkan secara terbalik untuk memeriksa apakah sebuah string secara tata bahasa benar sesuai dengan tata bahasa.
+
+
+CFG juga digunakan untuk mendeskripsikan bahasa pemrograman dan program pengurai dalam kompiler dapat dihasilkan secara otomatis dari tata bahasa bebas konteks.
+    </p> 
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- akhir tugas5 -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
