@@ -42,6 +42,8 @@
         <li><a href="#tugas3" class="page-scroll">Tugas 3</a></li>
         <li><a href="#tugas4" class="page-scroll">Tugas 4</a></li>
         <li><a href="#tugas5" class="page-scroll">Tugas 5</a></li>
+        <li><a href="#tugas6" class="page-scroll">Tugas 6</a></li>
+        <li><a href="#tugas7" class="page-scroll">Tugas 7</a></li>
         <!-- <li><a href="">About3</a></li> -->
       </ul>
     </div>
@@ -306,6 +308,150 @@ CFG juga digunakan untuk mendeskripsikan bahasa pemrograman dan program pengurai
     </div> 
     </section>
     <!-- akhir tugas5 -->
+
+    <!-- tugas6 -->
+    <section class="about" id="tugas6">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Hierarki Chomsky</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> 
+            <img src="img/tugas6.png"><br> <br>
+            &nbsp; &nbsp; &nbsp; Chomsky adalah salah satu pemrakarsa teori pemerolehan bahasa yang meyakini bahwa proses pemerolehan bahasa adalah suatu proses mental atau sebuah hirarki penahanan kelas tata bahasa formal. Yang digambarkan oleh Noam Chomsky pada tahun 1956. Hal ini juga dinami Marcel-Paul Schutzenberger, yang memainkan peran penting dalam pengembangan teori bahasa formal. Pada dasranya Chomsky Hierarchy ini memungkinkan kemungkinan bagi pemahaman dan penggunaan model ilmu komputer yang memungkinkan programmer untuk mencapai tujuan linguistik bermakna sistematis. <br> <br>
+
+        </div>
+        <div class="col-sm-6">
+          <p class="pKanan"> 
+            &nbsp; &nbsp; &nbsp;Ada 4(empat) kelas pengelompokan suatu bahasa, yang kita kenal dengan “Chomsky Hierarchy”. Hirarki atau tingkatan bahasa ini dikembangkan oleh Noam Chomsky pada tahun 1959. <br> <br>
+
+
+1. Tipe 0 (Unrestricted)<br>
+
+&nbsp; &nbsp; &nbsp;Pada tipe 0 ini "simbol  ruas sebelah kiri harus minimal ada sebuah simbol variabel dan tidak ada batasan pada aturan produksi". Tipe 0 menggunakan mesin automata dengan Mesin Turing.
+<br> <br>
+
+2. Tipe 1 (Context Sensitive)<br>
+
+&nbsp; &nbsp; &nbsp;Pada tipe 1 ini "simbol pada ruas sebelah kiri harus minimal ada sebuah variabel dan panjang String ruas kiri harus lebih kecil atau sama dengan ruas kanan (|a| <=|B|)". Tipe 1 menggunakan mesin automata dengan Linier Bounded Automata.
+<br> <br>
+
+3. Tipe 2 (Context Free / Bebas Konteks)<br>
+
+&nbsp; &nbsp; &nbsp;Pada tipe 2 ini "simbol sebelah kiri harus simbol variabel". Tipe 2 menggunakan mesin automata dengan Push Down Automata.
+<br><br>
+
+4. Tipe 3 (Regular)<br>
+
+&nbsp; &nbsp; &nbsp;Pada tipe 3 ini "simbol sebelah kiri harus berupa simbol variabel dan simbol sebelah kanan maksimal hanya memiliki sebuah simbol variabel dan bila ada terletak di paling kanan". Tipe 3 menggunakan mesin automata dengan Finite State Automata DFA dan NFA.
+
+
+
+    </p> 
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- akhir tugas6 -->
+
+ <!-- tugas7 -->
+    <section class="about" id="tugas7">
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Mesin Turing</h2>
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="pKiri"> 
+            
+            &nbsp; &nbsp; &nbsp; Mesin Turing adalah model komputasi teoritis yang ditemukan oleh Alan Turing, berfungsi sebagai model ideal untuk melakukan perhitungan matematis. Walaupun model ideal ini diperkenalkan sebelum komputer nyata dibangun, model ini tetap diterima kalangan ilmu komputer sebagai model komputer yang sesuai untuk menentukan apakah suatu fungsi dapat selesaikan oleh komputer atau tidak (menentukan computable function). Mesin Turing terkenal dengan ungkapan ” Apapun yang bisa dilakukan oleh Mesin Turing pasti bisa dilakukan oleh komputer.” Mesin Turing sendiri merupakan model yang sangat sederhana dari komputer. Secara esensial, mesin Turing adalah sebuah finite automaton yang miliki sebuah tape tunggal dengan panjang tak terhingga yang dapat membaca dan menulis data. Mesin Turing menggunakan notasi seperti ID-ID pada PDA untuk menyatakan konfigurasi dari komputasinya.
+
+ <br> <br>
+<img src="img/tugas7.jpg">
+<br> <br>
+<strong>Cara Kerja Mesin Turing</strong> <br>
+
+&nbsp; &nbsp; &nbsp; Pada PDA (Push Down Otomata) digunakan stack untuk menyimpan dan mengakses data inputan. Tetapi hal ini menyebabkan kemampuan kerja PDA yang terbatas karena pada prinsip stack,hanya data teratas yang bisa diakses. Ini menyebabkan keterbatasan PDA. Mesin turing menggunakan pita (tape) sebagai memori yang berbentuk array . Hal ini menyebabkan data pada pita dapat diakses dari mana saja.
+<br> <br>
+
+<strong>Spesifikasi Mesin Turing</strong> <br>
+
+• Mesin turing memiliki pita berupa array sebagai memori yang dapat menyimpan sebuah &nbsp;&nbsp;simbol tunggal <br>
+
+• Mesin turing memiliki head sebagai penunjuk posisi yang sedang diakses pada pita <br>
+
+• Head dapat bergerak kekanan/kekiri pada pita sesuai fungsi transisi yang ditetapkan &nbsp;&nbsp;untuk membaca inputan <br>
+
+• Head juga dapat melakukan penulisan/ mengubah isi pita <br>
+
+        </div>
+        <div class="col-sm-6">
+          <p class="pKanan"> 
+            Sebuah mesin turing secara formal dinyatakan dalam 7 tupel
+
+M = (Q, S, G, d, S, F, b) <br>
+
+Dimana: <br> 
+
+Q =  himpunan state  <br>
+
+S = himpunan simbol input  <br>
+
+G = simbol pada pita,termasuk blank  <br>
+
+d = fungsi transisi  <br>
+
+S = state awal (S anggota elemen Q)  <br>
+
+F = himpunan state akhir  <br>
+
+b = simbol kosong (menandakan bagian yang tidak terisi)<br> <br>
+
+
+<strong>Prinsip Kerja mesin Turing</strong> <br>
+
+1. Lihat state semula dan simbol yang ditunjuk head <br>
+
+2. Berdasarkan fungsi transisinya,tentukan: -state berikutnya -Lakukan penulisan ke pita &nbsp; &nbsp;&nbsp; &nbsp;Gerakkan head ke kanan dan ke kiri <br> 
+
+3. Bila dari pasangan state dan simbol yang ditunjuk head tidak ada lagi fungsi <br>&nbsp;&nbsp;&nbsp; &nbsp;transisinya,berarti mesin turing berhenti <br>
+
+4. Bila mesin turing berhenti di dalam state final (F) , berarti input diterima. Sebaliknya &nbsp;&nbsp;&nbsp;&nbsp;jika mesin berhenti tidak pada state akhir,maka berarti inputan tersebut ditolak. <br> <br>
+
+
+<strong>Contoh Mesin Turing Sederhana</strong> <br>
+
+  &nbsp; &nbsp; &nbsp;Sebuah contoh mesin Turing dapat dibangun untuk melakukan komputasi sederhana yang didefinisikan seperti ini: Tentukan ada berapa angka 1 dalam sebuah string berbentuk 0111...110 (rangkaian angka 1 yang didahului dengan 0 dan diakhiri juga dengan 0), apakah berjumlah genap atau berjumlah ganjil.  Jika angka 1 di antara dua angka 0 berjumlah genap, tulis sebuah angka 0 pada salah satu sel dari tape mesin Turing. Jika angka 1 di antara dua angka 0 berjumlah ganjil, tulis sebuah angka 1 pada salah satu sel dari tape mesin Turing.
+<br> <br>
+
+  &nbsp; &nbsp; &nbsp;Untuk menyelesaikan masalah komputasi ini, kita buat tiga buah State bagi mesin Turing ini, yaitu Start, Even, dan Odd. Di samping itu kita buat sekumpulan aturan Transisi yang digunakan oleh mesin Turing ini untuk melakukan proses komputasinya. Aturan-aturan Transisi tersebut dapat dituliskan demikian:
+<br> <br>
+
+1. Jika mesin Turing berada pada status Start, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi status Even, Ganti simbol 0 pada Tape dengan Blank (atau Hapus simbol 0 pada Tape), dan Bergerak ke kanan satu sel. 
+<br> <br>
+2. Jika mesin Turing berada pada status Even, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi status Odd, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel. 
+<br> <br>
+3. Jika mesin Turing berada pada status Odd, dan membaca simbol 1 pada Tape, lakukan hal berikut: Pindah status menjadi Even, Ganti simbol 1 pada Tape dengan Blank, dan Bergerak ke kanan satu sel. 
+<br> <br>
+4. Jika mesin Turing berada pada status Even, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 0, dan tetap pada sel tersebut (tidak perlu berpindah ke kiri maupun ke kanan).  <br> <br>
+
+5. Jika mesin Turing berada pada status Odd, dan membaca simbol 0 pada Tape, lakukan hal berikut: Pindah status menjadi Halt, Ganti simbol 0 pada Tape dengan 1, dan tetap pada sel tersebut. <br>
+
+
+    </p> 
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- akhir tugas7 -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
